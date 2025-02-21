@@ -2,6 +2,7 @@ import { Repository, IsNull } from 'typeorm';
 import { Task } from '../models/Task.entity';
 import { setLog } from '../common/logger.helper';
 import { connectionSource } from '../config/typeorm';
+import { StatusType } from '../enum/status';
 
 export class TaskService {
     private taskRepository: Repository<Task>;
@@ -33,7 +34,10 @@ export class TaskService {
      * @param limit - Number of tasks per page (default is 25).
      * @returns A paginated list of tasks.
      */
-    async getAll(page: number = 1, limit: number = 25) {
+    async getAll(page: number = 1, limit: number = 25): Promise<{ 
+        data: { id: string; title: string; description?: string; status: StatusType; category: string | null; createdAt: Date; updatedAt: Date }[];
+        meta: { total: number; page: number; limit: number };
+    }> { 
         try {
             setLog({ level: 'info', method: 'TaskService.getAll', message: `Fetching tasks - Page: ${page}, Limit: ${limit}` });
             const [tasks, total] = await this.taskRepository.findAndCount({

@@ -16,22 +16,25 @@ export class CategoriesService {
      * @param category 
      * @returns 
      */
-    async create(category: Category): Promise<Category> {
+    async create(name: string): Promise<Category> {
         try {
             setLog({ 
                 level: 'info', 
                 method: 'CategoriesService.create', 
-                message: `Creating category with name: ${category.name}` 
+                message: `Creating category with name: ${name}` 
             });
-
+    
+            // 👉 Create a new Category instance
+            const category = this.categoryRepository.create({ name });
+    
             const savedCategory = await this.categoryRepository.save(category);
-
+    
             setLog({ 
                 level: 'info', 
                 method: 'CategoriesService.create', 
                 message: `Category created successfully: ${savedCategory.name}` 
             });
-
+    
             return savedCategory;
         } catch (error) {
             setLog({ 
@@ -40,11 +43,11 @@ export class CategoriesService {
                 message: 'Error while creating category',
                 error: error as Error,
             });
-
+    
             throw error;
         }
     }
-
+    
     /**
      * Fetch all Categories
      * 
