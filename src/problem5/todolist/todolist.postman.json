@@ -1,0 +1,1127 @@
+{
+	"info": {
+		"_postman_id": "4afe34c3-bea5-415a-84ee-db227a2b108b",
+		"name": "problem5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8954484"
+	},
+	"item": [
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/tasks/v1/de77e887-478e-404d-bfd4-88132bf76f4f",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"v1",
+								"de77e887-478e-404d-bfd4-88132bf76f4f"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/de77e887-478e-404d-bfd4-88132bf76f4f",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										"de77e887-478e-404d-bfd4-88132bf76f4f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "514"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"202-/CvRoAorsJxnwW5RfTuk4Raeo0I\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:41:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task fetched successfully\",\n    \"result\": {\n        \"id\": \"de77e887-478e-404d-bfd4-88132bf76f4f\",\n        \"title\": \"Review Sorting Algorithm\",\n        \"description\": \"Understand mergeSort\",\n        \"status\": \"pending\",\n        \"categoryId\": \"2696b79f-8507-4510-b4ff-3e258ddda245\",\n        \"createdAt\": \"2025-02-21T07:40:22.355Z\",\n        \"updatedAt\": \"2025-02-21T07:40:22.355Z\",\n        \"deletedAt\": null,\n        \"category\": {\n            \"id\": \"2696b79f-8507-4510-b4ff-3e258ddda245\",\n            \"name\": \"Study\",\n            \"createdAt\": \"2025-02-21T07:40:22.342Z\",\n            \"updatedAt\": \"2025-02-21T07:40:22.342Z\",\n            \"deletedAt\": null\n        }\n    }\n}"
+						},
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/d13031e9-2758-4027-9d45-f64aa78b56e7",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										"d13031e9-2758-4027-9d45-f64aa78b56e7"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-PtElIc7j6JVLMI7oPRlveCY9z3Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:50:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Failed to fetch task\",\n    \"error\": \"Task with ID d13031e9-2758-4027-9d45-f64aa78b56e7 not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/tasks/v1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "878"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"36e-YrHNF7WIqACNU5NnLJV7rkhvV7E\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:40:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Tasks fetched successfully\",\n    \"result\": {\n        \"data\": [\n            {\n                \"id\": \"de77e887-478e-404d-bfd4-88132bf76f4f\",\n                \"title\": \"Review Sorting Algorithm\",\n                \"description\": \"Understand mergeSort\",\n                \"status\": \"pending\",\n                \"category\": \"Study\",\n                \"createdAt\": \"2025-02-21T07:40:22.355Z\",\n                \"updatedAt\": \"2025-02-21T07:40:22.355Z\"\n            },\n            {\n                \"id\": \"9dfec53b-0829-4f64-884b-9d869078e293\",\n                \"title\": \"Explain the problem out loud\",\n                \"description\": \"Improve problem-solving and communication skills\",\n                \"status\": \"pending\",\n                \"category\": \"Study\",\n                \"createdAt\": \"2025-02-21T07:40:22.355Z\",\n                \"updatedAt\": \"2025-02-21T07:40:22.355Z\"\n            },\n            {\n                \"id\": \"7e4efdfe-d7c4-4568-bfcb-3c15f952f87f\",\n                \"title\": \"Time Drills\",\n                \"description\": \"Stick to 5 mins/easy, 10 mins/medium, and 15 mins/hard problems\",\n                \"status\": \"pending\",\n                \"category\": \"Study\",\n                \"createdAt\": \"2025-02-21T07:40:22.355Z\",\n                \"updatedAt\": \"2025-02-21T07:40:22.355Z\"\n            }\n        ],\n        \"meta\": {\n            \"total\": 3,\n            \"page\": 1,\n            \"limit\": 25\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Study AdjacencyList on Graph\",\n    \"categoryId\": \"2696b79f-8507-4510-b4ff-3e258ddda245\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/tasks/v1/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"v1",
+								"new"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"\",\n    \"categoryId\": \"123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/new",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										"new"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "301"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12d-11UtitnHUD6c+o0asCypTo1i/40\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:45:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Validation error\",\n    \"error\": [\n        {\n            \"type\": \"field\",\n            \"msg\": \"Invalid value\",\n            \"path\": \"title\",\n            \"location\": \"body\"\n        },\n        {\n            \"type\": \"field\",\n            \"msg\": \"Title is required\",\n            \"path\": \"title\",\n            \"location\": \"body\"\n        },\n        {\n            \"type\": \"field\",\n            \"value\": \"123\",\n            \"msg\": \"Invalid category ID\",\n            \"path\": \"categoryId\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Study AdjacencyList on Graph\",\n    \"categoryId\": \"2696b79f-8507-4510-b4ff-3e258ddda245\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/new",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										"new"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "333"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14d-CQYLAtl8eXySy5PDSh5lbC9Rj4w\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:46:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task successfully created\",\n    \"result\": {\n        \"title\": \"Study AdjacencyList on Graph\",\n        \"categoryId\": \"2696b79f-8507-4510-b4ff-3e258ddda245\",\n        \"description\": null,\n        \"id\": \"ec86af49-fa90-4cce-a40c-e06b010bb60d\",\n        \"status\": \"pending\",\n        \"createdAt\": \"2025-02-21T07:46:07.077Z\",\n        \"updatedAt\": \"2025-02-21T07:46:07.077Z\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Solve 20 leetcode problems with time drill\",\n    \"categoryId\": \"2696b79f-8507-4510-b4ff-3e258ddda245\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/tasks/v1/delete/d13031e9-2758-4027-9d45-f64aa78b56e7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"v1",
+								"delete",
+								"d13031e9-2758-4027-9d45-f64aa78b56e7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Solve 20 leetcode problems with time drill\",\n    \"categoryId\": \"2696b79f-8507-4510-b4ff-3e258ddda245\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/delete/d13031e9-2758-4027-9d45-f64aa78b56e7",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										"delete",
+										"d13031e9-2758-4027-9d45-f64aa78b56e7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-Tv8VhAuNXBrvdXD+gd5QGb4CfRA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:49:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task deleted successfully\",\n    \"result\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"InProgress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/tasks/v1/update/ec86af49-fa90-4cce-a40c-e06b010bb60d",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"v1",
+								"update",
+								"ec86af49-fa90-4cce-a40c-e06b010bb60d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "invalid status",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"inProgress\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/update/ec86af49-fa90-4cce-a40c-e06b010bb60d",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										"update",
+										"ec86af49-fa90-4cce-a40c-e06b010bb60d"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "151"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"97-6HxZsh71lZxGFwr3CSGWHujTuqY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:47:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Validation error\",\n    \"error\": [\n        {\n            \"type\": \"field\",\n            \"value\": \"inProgress\",\n            \"msg\": \"Invalid status\",\n            \"path\": \"status\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"InProgress\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/tasks/v1/update/ec86af49-fa90-4cce-a40c-e06b010bb60d",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"v1",
+										"update",
+										"ec86af49-fa90-4cce-a40c-e06b010bb60d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "503"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f7-bRuJN0sXktX//PdTdWVcLVj1sFo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:48:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Task updated successfully\",\n    \"result\": {\n        \"id\": \"ec86af49-fa90-4cce-a40c-e06b010bb60d\",\n        \"title\": \"Study AdjacencyList on Graph\",\n        \"description\": null,\n        \"status\": \"InProgress\",\n        \"categoryId\": \"2696b79f-8507-4510-b4ff-3e258ddda245\",\n        \"createdAt\": \"2025-02-21T07:46:07.077Z\",\n        \"updatedAt\": \"2025-02-21T07:48:05.746Z\",\n        \"deletedAt\": null,\n        \"category\": {\n            \"id\": \"2696b79f-8507-4510-b4ff-3e258ddda245\",\n            \"name\": \"Study\",\n            \"createdAt\": \"2025-02-21T07:40:22.342Z\",\n            \"updatedAt\": \"2025-02-21T07:40:22.342Z\",\n            \"deletedAt\": null\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/categories/v1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/categories/v1/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"v1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "542"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21e-c6/BZR5v0MPROi5cXU0v6vIHusc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:43:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Categories fetched successfully\",\n    \"result\": {\n        \"data\": [\n            {\n                \"id\": \"2696b79f-8507-4510-b4ff-3e258ddda245\",\n                \"name\": \"Study\",\n                \"createdAt\": \"2025-02-21T07:40:22.342Z\",\n                \"updatedAt\": \"2025-02-21T07:40:22.342Z\"\n            },\n            {\n                \"id\": \"819c9cfc-0209-420e-808a-a2fd93106323\",\n                \"name\": \"Personal\",\n                \"createdAt\": \"2025-02-21T07:40:22.342Z\",\n                \"updatedAt\": \"2025-02-21T07:40:22.342Z\"\n            },\n            {\n                \"id\": \"62659d60-266c-4931-b3ab-b0b67a95cf6c\",\n                \"name\": \"Shopping\",\n                \"createdAt\": \"2025-02-21T07:40:22.342Z\",\n                \"updatedAt\": \"2025-02-21T07:40:22.342Z\"\n            }\n        ],\n        \"meta\": {\n            \"total\": 3,\n            \"page\": 1,\n            \"limit\": 25\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/categories/v1/3ebd9239-eeb8-4213-aa5d-85022472e024",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"v1",
+								"3ebd9239-eeb8-4213-aa5d-85022472e024"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/categories/v1/2696b79f-8507-4510-b4ff-3e258ddda245",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"v1",
+										"2696b79f-8507-4510-b4ff-3e258ddda245"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"df-Y37DpFocPyMIe0lh7E00qUFnAmk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:44:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category fetched successfully\",\n    \"result\": {\n        \"id\": \"2696b79f-8507-4510-b4ff-3e258ddda245\",\n        \"name\": \"Study\",\n        \"createdAt\": \"2025-02-21T07:40:22.342Z\",\n        \"updatedAt\": \"2025-02-21T07:40:22.342Z\",\n        \"deletedAt\": null\n    }\n}"
+						},
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/categories/v1/3ebd9239-eeb8-4213-aa5d-85022472e024",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"v1",
+										"3ebd9239-eeb8-4213-aa5d-85022472e024"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "128"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"80-YsVpKcTQqkFe0wgjBUA7FcJeWyM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:58:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Failed to fetch category\",\n    \"error\": \"Category with ID 3ebd9239-eeb8-4213-aa5d-85022472e024 not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "new",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Reading\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/categories/v1/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"v1",
+								"new"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Reading\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/categories/v1/new",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"v1",
+										"new"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "225"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e1-pMNnCHYPS3zTRW1j4Y6y5sVGWB0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:56:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category successfully created\",\n    \"result\": {\n        \"name\": \"Reading\",\n        \"id\": \"3ebd9239-eeb8-4213-aa5d-85022472e024\",\n        \"createdAt\": \"2025-02-21T07:56:33.495Z\",\n        \"updatedAt\": \"2025-02-21T07:56:33.495Z\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Reading updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/categories/v1/update/3ebd9239-eeb8-4213-aa5d-85022472e024",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"v1",
+								"update",
+								"3ebd9239-eeb8-4213-aa5d-85022472e024"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Reading updated\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/categories/v1/update/3ebd9239-eeb8-4213-aa5d-85022472e024",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"v1",
+										"update",
+										"3ebd9239-eeb8-4213-aa5d-85022472e024"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "233"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e9-R3SZPTI0ii2Usy8dIZWqTJBRhRY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:57:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category updated successfully\",\n    \"result\": {\n        \"id\": \"3ebd9239-eeb8-4213-aa5d-85022472e024\",\n        \"name\": \"Reading updated\",\n        \"createdAt\": \"2025-02-21T07:56:33.495Z\",\n        \"updatedAt\": \"2025-02-21T07:57:26.082Z\",\n        \"deletedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/categories/v1/delete/3ebd9239-eeb8-4213-aa5d-85022472e024",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories",
+								"v1",
+								"delete",
+								"3ebd9239-eeb8-4213-aa5d-85022472e024"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "succeed",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/categories/v1/delete/3ebd9239-eeb8-4213-aa5d-85022472e024",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"categories",
+										"v1",
+										"delete",
+										"3ebd9239-eeb8-4213-aa5d-85022472e024"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48-Uw3C2CNWUneEJl91DzFo2GQzhRE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 15:57:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category deleted successfully\",\n    \"result\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
