@@ -72,7 +72,7 @@ For performance, we have few options to optimise the performance:
       - Pros: Faster than Redis since it's stored locally, no extra cost
       - Cons:Limited by server memory, not suitable for large datasets
 2. **Database Indexing**  <br>
-   - Pros: Improves query performance for searches on specific columns (e.g., watch name, brand, etc.)
+   - Pros: Improves query performance for searches on specific columns (e.g., userId, score, etc.)
    - Cons: Indexes can slow down writes, more storage required <br> <br>
    another solution if we want to use Database indexing, 
    Actually we can just *create a new table* that contains data specialized for read. However, this solution have their own pros and cons as well. 
