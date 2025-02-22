@@ -59,14 +59,6 @@
 
 ## D. Deep Dive
 The main focus of this API is the Real-time update features and performance, lets do estimation below:
-### Estimate:
-1. Daily Active User 1 Millions 
-2. Average number of watches added per day 1,000 watches / day 
-3. Average number of watches size (include image): 500 kb 
-4. Yearly Watches storage 1,000 Watches * 360 days * 500 kb = 182,5 GB 
-5. Proximity Search 3 queries per user * 1,000,000 users = 3 millions queries/day 
-6. Read Per second 3 millions read per day / (24 hours * 3600 seconds) = 34,72 reads/seconds
-
 ### I. Performance
 For performance, we have few options to optimise the performance:
 1. **Caching,** <br>
