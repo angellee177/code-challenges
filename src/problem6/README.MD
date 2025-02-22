@@ -79,32 +79,32 @@ For performance, we have few options to optimise the performance:
    Here is the pros and cons below: <br> <br> 
     - Pros: Optimized for reading, main table won't be impacted by indexing when doing write and update, more flexible because we can apply complex indexing here.
     - Cons: Might need more larger storage space and not suitable for handling large data set, might lead to data duplication because we keep the copy of the data.
-3. Rate-limiting,
+3. **Rate-limiting** <br>
    - Pros: Prevents system overload, improves stability, and protects against abuse.
    - Cons: Can delay requests for legitimate users, adds complexity to system design.
-4. Connection Pooling,
+4. **Connection Pooling** <br>
    Optimizes database performance by reusing existing connections. (Performance optimization)
    - Pros: Reduces overhead by reusing database connections.
    - Cons: Requires proper configuration to avoid resource exhaustion.
-5. Load Balancer,
+5. **Load Balancer** <br>
    A load balancer distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed, improving performance and reliability.
    - Pros: Enhances scalability, ensures high availability, and improves response time.
    - Cons: Adds complexity, requires maintenance, and can be a single point of failure if not configured redundantly.
 
 ### II. Real-time Update
 For Real-time update, we have few options:
-1. Event-Driven Architecture
+1. **Event-Driven Architecture** <br>
     1. Kafka
     Kafka enables real-time data streams where producers send events, and consumers process them as they arrive. Network partitions may cause delays or event loss.
     - Pros: High throughput, low latency, scalable, and fault-tolerant
     - Cons: Complex integration, requires Kafka infrastructure, potential event delays during network issues    
-2. WebSockets,
+2. **WebSocket** <br>
    - Pros: Enable real-time, two-way communication between client and server; ideal for live updates.
    - Cons: Can be complex to implement and maintain; may require persistent connections.
-3. GraphQL Subscriptions
+3. **GraphQL Subscriptions** <br>
    - Pros: Real-time updates over WebSockets, only sends changed data, reduces payload.
    - Cons: More complex than REST, requires a GraphQL server.
-4. Polling (Long or Short)
+4. **Polling (Long or Short)** <br>
    Periodically requests updates from the server, simple but less efficient.
    - Pros: Simple and easy to implement, no persistent connection needed.
    - Cons: Less efficient, can increase server load and latency.
