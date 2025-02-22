@@ -87,8 +87,9 @@ For performance, we have few options to optimise the performance:
    - Pros: Reduces overhead by reusing database connections.
    - Cons: Requires proper configuration to avoid resource exhaustion.
 5. Load Balancer,
-   - Pros:
-   - Cons: 
+   A load balancer distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed, improving performance and reliability.
+   - Pros: Enhances scalability, ensures high availability, and improves response time.
+   - Cons: Adds complexity, requires maintenance, and can be a single point of failure if not configured redundantly.
 
 ### II. Real-time Update
 For Real-time update, we have few options:
